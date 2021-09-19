@@ -1,0 +1,108 @@
+body {
+    font-family: IBM Plex Sans, sans-serif;
+}
+
+.display-1 {
+    font-family: Jost, sans-serif;
+    font-size: 4.6rem;
+    line-height: 1.1
+}
+
+.display-7 {
+    font-family: Jost, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5
+}
+
+@media (max-width: 992px) {
+    .display-1 {
+        font-size: 3.68rem
+    }
+}
+
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: calc(2.26rem + (4.6 - 2.26) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc(1.1 * (2.26rem + (4.6 - 2.26) * ((100vw - 20rem) / (48 - 20))))
+    }
+
+    .display-7 {
+        font-size: calc(1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc(1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))))
+    }
+}
+
+a, a:hover {
+    color: #6592e6
+}
+
+body {
+    overflow-x: hidden
+}
+
+a {
+    transition: color .6s
+}
+
+.content-main {
+    background-color: #232323
+}
+
+.content-main .social-row .social-item {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-right: .7rem
+}
+
+.content-main .social-row .social-item .iconfont {
+    font-size: 32px;
+    border-radius: 50%;
+    padding: .6rem;
+    border: 2px solid #f66;
+    transition: all .25s;
+    color: #f66;
+}
+
+.content-main .social-row .social-item .iconfont:hover {
+    background-color: #f66;
+    color: #fff
+}
+
+.content-main .section-title {
+    text-align: left;
+    color: #e43f3f
+}
+
+.content-main .text, .content-main .social-row {
+    text-align: left;
+    color: #bbb
+}
+
+.content-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #232323;
+    overflow: hidden
+}
+
+.content-footer .media-container-row .text {
+    color: #bbb
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, .3);
+    border-radius: 8px;
+    background-color: #443737
+}
+
+html::-webkit-scrollbar {
+    width: 6px;
+    background-color: #443737
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, .3);
+    background-color: #f66
+}
